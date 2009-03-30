@@ -11,10 +11,10 @@ inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
-lib/Database/CheckConnectivity.pm
-lib/Database/CheckConnectivity/Driver/mysql.pm
-lib/Database/CheckConnectivity/Driver/Pg.pm
-lib/Database/CheckConnectivity/Driver/SQLite.pm
+lib/DBIx/CheckConnectivity.pm
+lib/DBIx/CheckConnectivity/Driver/mysql.pm
+lib/DBIx/CheckConnectivity/Driver/Pg.pm
+lib/DBIx/CheckConnectivity/Driver/SQLite.pm
 Makefile.PL
 MANIFEST
 META.yml

@@ -1,14 +1,14 @@
-package Database::CheckConnectivity::Driver::mysql;
+package DBIx::CheckConnectivity::Driver::Pg;
 
 use warnings;
 use strict;
 
 sub system_database {
-    return '';
+    return 'template1';
 }
 
 sub not_exist_error {
-    return qr/unknown database/i;
+    return qr/not exist/i;
 }
 
 1;
@@ -17,7 +17,7 @@ __END__
 
 =head1 NAME
 
-Database::CheckConnectivity::mysql - 
+DBIx::CheckConnectivity::Pg - 
 
 =head1 INTERFACE
 
@@ -25,11 +25,11 @@ Database::CheckConnectivity::mysql -
 
 =item system_database
 
-return ''
+return 'template1'
 
 =item not_exist_error
 
-return qr/unknown database/i;
+return qr/not exist/
 
 =back
 

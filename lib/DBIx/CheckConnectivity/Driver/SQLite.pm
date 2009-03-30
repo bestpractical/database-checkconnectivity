@@ -1,15 +1,10 @@
-package Database::CheckConnectivity::Driver::Pg;
+package DBIx::CheckConnectivity::Driver::SQLite;
 
 use warnings;
 use strict;
 
-sub system_database {
-    return 'template1';
-}
-
-sub not_exist_error {
-    return qr/not exist/i;
-}
+sub system_database { }
+sub not_exist_error { }
 
 1;
 
@@ -17,7 +12,7 @@ __END__
 
 =head1 NAME
 
-Database::CheckConnectivity::Pg - 
+DBIx::CheckConnectivity::SQLite - 
 
 =head1 INTERFACE
 
@@ -25,11 +20,11 @@ Database::CheckConnectivity::Pg -
 
 =item system_database
 
-return 'template1'
+SQLite does not have system_database, return undef
 
 =item not_exist_error
 
-return qr/not exist/
+SQLite does not have not exist error, normally, it just create the file
 
 =back
 

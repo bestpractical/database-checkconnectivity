@@ -1,7 +1,7 @@
 use inc::Module::Install;
 
-name     'Database-CheckConnectivity';
-all_from 'lib/Database/CheckConnectivity.pm';
+name     'DBIx-CheckConnectivity';
+all_from 'lib/DBIx/CheckConnectivity.pm';
 author   'sunnavy <sunnavy@bestpractical.com>';
 license  'perl';
 

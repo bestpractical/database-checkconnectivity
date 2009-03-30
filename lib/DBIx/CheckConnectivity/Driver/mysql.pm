@@ -1,10 +1,15 @@
-package Database::CheckConnectivity::Driver::SQLite;
+package DBIx::CheckConnectivity::Driver::mysql;
 
 use warnings;
 use strict;
 
-sub system_database { }
-sub not_exist_error { }
+sub system_database {
+    return '';
+}
+
+sub not_exist_error {
+    return qr/unknown database/i;
+}
 
 1;
 
@@ -12,7 +17,7 @@ __END__
 
 =head1 NAME
 
-Database::CheckConnectivity::SQLite - 
+DBIx::CheckConnectivity::mysql - 
 
 =head1 INTERFACE
 
@@ -20,11 +25,11 @@ Database::CheckConnectivity::SQLite -
 
 =item system_database
 
-SQLite does not have system_database, return undef
+return ''
 
 =item not_exist_error
 
-SQLite does not have not exist error, normally, it just create the file
+return qr/unknown database/i;
 
 =back
 

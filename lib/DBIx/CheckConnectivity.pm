@@ -1,4 +1,4 @@
-package Database::CheckConnectivity;
+package DBIx::CheckConnectivity;
 
 use warnings;
 use strict;
@@ -80,23 +80,23 @@ __END__
 
 =head1 NAME
 
-Database::CheckConnectivity - util to check database's connectivity
+DBIx::CheckConnectivity - util to check database's connectivity
 
 
 =head1 VERSION
 
-This document describes Database::CheckConnectivity version 0.01
+This document describes DBIx::CheckConnectivity version 0.01
 
 
 =head1 SYNOPSIS
 
-    use Database::CheckConnectivity;
+    use DBIx::CheckConnectivity;
     if ( check_connectivity( dsn => 'dbi:mysql:database=myjifty', user => 'jifty',
             password => 'blabla' ) ) {
         print 'we can connect';
     }
     else {
-        warn "can not connect: $Database::CheckConnectivity::ERROR";
+        warn "can not connect: $DBIx::CheckConnectivity::ERROR";
     }
 
 =head1 DESCRIPTION
